@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="parent">
+
+        <h1 style=" color: black; font-weight: bold; align-items: center; display: flex; justify-content: center; font-size: 50px;">Finance App</h1>
+        <h2 style="display: flex; justify-content: center; align-items: center; font-size: 45px; font-weight: bold; color: black; ">Enter
+            Amount</h2>
+
+        <div class="inp1">
+            <input
+                style="padding-left: 30px; padding-right: 30px; align-items: center; background-color: black; color: white; padding-top: 10px; padding-bottom: 10px; border-radius: 20px;"
+                type="number" id="inp" placeholder="Amount">
+        </div>
+    </div>
+
+    <div class="btn">
+        <button
+            style="background-color: green; padding-left: 30px; padding-right: 30px; padding-top: 7px; padding-bottom: 7px; border-radius: 20px; border: 2px solid green;"
+            onclick="income()">income</button>
+        <button
+            style="background-color: green; padding-left: 30px; padding-right: 30px; padding-top: 7px; padding-bottom: 7px; border-radius: 20px; border: 2px solid green;"
+            onclick="expenditure()">expenditure</button>
+    </div>
+
+    <div class="container">
+        <div class="box1">
+            <h4 class="">income <b id="tol_income">0</b></h4>
+        </div>
+        <div class="box2">
+            <h4 class=""> expenditure <b id="tol_expenditure">0</b></h4>
+        </div>
+
+        <div class="box3">
+            <h4 class=""> saving/loss <b id="saving">0</b></h4>
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
